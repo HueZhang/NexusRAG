@@ -1,0 +1,39 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- 环境与密钥 ---
+.env
+.env.*
+!.env.example
+
+# --- 数据（体积大，不进仓库） ---
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/README.md
+
+# --- 向量库 / 模型缓存 ---
+*.sqlite3
+*.faiss
+chroma_db/
+vector_store/
+models/
+.cache/
+
+# --- 编辑器/系统 ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- 日志 ---
+*.log
+logs/
